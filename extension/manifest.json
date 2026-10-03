@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Помощник учителя для Дневник.ру",
+  "version": "2.1",
+  "description": "Неофициальное. Сводка по своим журналам: контрольные впереди и ученики, которым не хватает оценок к концу периода. Только чтение.",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://dnevnik.ru/*",
+    "https://login.dnevnik.ru/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Сводка по журналам"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}

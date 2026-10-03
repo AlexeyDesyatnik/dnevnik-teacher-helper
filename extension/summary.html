@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сводка Дневника</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="summary.css">
+</head>
+<body>
+  <header>
+    <h1>Сводка по журналам</h1>
+    <div class="status">
+      <span id="updated"></span>
+      <button id="refresh" type="button">Обновить</button>
+    </div>
+  </header>
+
+  <div id="banner" hidden></div>
+  <div id="update" hidden></div>
+
+  <main id="content">
+    <p class="muted">Загрузка…</p>
+  </main>
+
+  <footer>
+    <p>
+      Неофициальное расширение для Дневник.ру. Только читает данные из Дневника
+      (при открытии страницы и раз в пару часов) и ничего в журнале не меняет.
+      ФИО и оценки не покидают браузер и не сохраняются на диск.
+    </p>
+    <p id="links"></p>
+  </footer>
+
+  <script type="module" src="summary.js"></script>
+</body>
+</html>
